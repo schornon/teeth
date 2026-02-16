@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Effect Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(180deg, #2d2d2d 0%, #1a1a1a 100%);
+            color: white;
+            min-height: 200vh;
+        }
+        
+        .navbar {
+            background: rgba(45, 45, 45, 0.75);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .nav-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-menu a {
+            color: #b0b0b0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .download-btn {
+            background-color: #4a9eff;
+            color: white !important;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #2d2d2d 0%, #1a1a1a 100%);
+        }
+        
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 27px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: #b0b0b0;
+            margin-bottom: 2rem;
+        }
+        
+        .note {
+            background: rgba(74, 158, 255, 0.15);
+            border: 1px solid rgba(74, 158, 255, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 40px auto;
+            max-width: 800px;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="nav-icon"></div>
+                <span>Teeth - Dental Journal</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" style="color: white;">Home</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#" class="download-btn">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="app-icon"></div>
+        <h1>Teeth - Dental Journal</h1>
+        <p class="tagline">Your Personal Dental Health Companion</p>
+        
+        <div class="note">
+            <h3 style="margin-bottom: 10px;">✨ Glass Effect Applied</h3>
+            <p>The navigation bar now features a frosted glass effect with:</p>
+            <ul style="text-align: left; margin: 10px 0 10px 20px; line-height: 1.8;">
+                <li>Semi-transparent background (75% opacity)</li>
+                <li>12px backdrop blur filter</li>
+                <li>Subtle borders and shadows</li>
+                <li>Sticky positioning - scrolls content behind it</li>
+            </ul>
+            <p style="margin-top: 10px;"><strong>Scroll down to see the effect in action!</strong></p>
+        </div>
+        
+        <h2 style="margin-top: 60px;">Scroll down to see the glass effect...</h2>
+        <p style="margin-top: 20px; color: #b0b0b0;">↓</p>
+    </header>
+</body>
+</html>
