@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://teeth.csbrewed.com/sitemap.xml
