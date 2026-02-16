@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://schornon.github.io/teeth/sitemap.xml
+Sitemap: https://teeth.csbrewed.com/sitemap.xml

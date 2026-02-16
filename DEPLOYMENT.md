@@ -4,7 +4,7 @@
 This repository contains the landing page for the **Teeth - Dental Journal** iOS app, based on the template structure from schornon/the-surf-hero.
 
 ## Live Site
-Once deployed, the site will be available at: **https://schornon.github.io/teeth/**
+Once deployed, the site will be available at: **https://teeth.csbrewed.com**
 
 ## Structure
 
