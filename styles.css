@@ -73,11 +73,11 @@ header {
 }
 header h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 36px;
 }
 header h2 {
     margin: 0;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: lighter;
 }
 .app-icon {
