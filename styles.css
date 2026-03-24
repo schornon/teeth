@@ -1,15 +1,15 @@
 a {
-  color: #1e90ff;
+  color: #2E8FD9;
 }
 a:visited {
-  color: #4e7397;
+  color: #4A7FA8;
 }
 body {
     font-family: 'Nunito', sans-serif;
-    color: #FFFFFF;
+    color: #1A2E42;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #F0F8FF;
     text-align: center;
 }
 nav {
@@ -22,11 +22,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    color: white;
+    color: #1A2E42;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(240, 248, 255, 0.85);
     backdrop-filter: blur(6px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(74, 171, 240, 0.15);
 }
 .nav-left {
     font-family: 'Nunito', sans-serif;
@@ -50,7 +50,7 @@ nav {
     margin: 10px;
 }
 .nav-right a {
-    color: white;
+    color: #1A2E42;
     text-decoration: none;
     padding: 6px 16px;
     margin: 4px 6px;
@@ -63,7 +63,7 @@ nav a.active {
     opacity: 0.4;
 }
 nav a:hover {
-    background: rgba(255, 255, 255, .15);
+    background: rgba(74, 171, 240, 0.15);
     border-radius: 10px;
 }
 header {
@@ -101,12 +101,20 @@ header h2 {
 .get-app-button {
     text-decoration: none;
     font-weight: bold;
-    background-color: #007AFF;
+    background: linear-gradient(135deg, #4AABF0 0%, #1A7FCC 100%);
     color: #fff;
     border-radius: 500px;
-    padding: 10px 20px;
+    padding: 14px 36px;
     margin: 40px 0 10px 0;
     display: inline-block;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    box-shadow: 0 6px 20px rgba(74, 171, 240, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.get-app-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(74, 171, 240, 0.65);
 }
 .get-app-button:visited {
   color: #fff;
@@ -114,7 +122,7 @@ header h2 {
 .images {
     margin: 40px auto;
     width: 100%;
-    background-color: #111;
+    background-color: #DAEEFF;
     padding: 40px 0;
 }
 .section-title {
@@ -133,15 +141,15 @@ header h2 {
     height: 8px;
 }
 .screenshot-carousel::-webkit-scrollbar-track {
-    background: #222;
+    background: #C8E6F8;
     border-radius: 4px;
 }
 .screenshot-carousel::-webkit-scrollbar-thumb {
-    background: #555;
+    background: #7EC4EE;
     border-radius: 4px;
 }
 .screenshot-carousel::-webkit-scrollbar-thumb:hover {
-    background: #777;
+    background: #4AABF0;
 }
 .screenshot-item {
     flex: 0 0 auto;
@@ -154,7 +162,7 @@ header h2 {
     height: 500px;
     width: auto;
     border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(74, 171, 240, 0.25);
     transition: transform 0.3s ease;
 }
 .screenshot-item img:hover {
@@ -182,13 +190,13 @@ header h2 {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
-    background-color: #111;
+    background-color: #FFFFFF;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px rgba(74, 171, 240, 0.15);
 }
 .question {
     padding: 20px;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #C8E6F8;
     text-align: left;
 }
 .question:last-child {
@@ -197,9 +205,9 @@ header h2 {
 footer {
     margin-top: 20px;
     padding: 20px 0;
-    border-top: 1px solid #444;
+    border-top: 1px solid #C8E6F8;
     font-size: 14px;
-    color: #666;
+    color: #6B8FA8;
 }
 @media (max-width: 600px) {
     header {
