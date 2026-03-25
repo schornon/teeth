@@ -190,7 +190,7 @@ header h2 {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.82);
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(74, 171, 240, 0.15);
 }
