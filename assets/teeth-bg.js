@@ -5,6 +5,8 @@
     const MIN_SIZE = 50, MAX_SIZE = 120;
     const OPACITY = 0.25;
 
+    const STORAGE_KEY = 'teeth-bg-state';
+
     const img = new Image();
     img.src = new URL('my-teeth-icon-alpha.png', document.currentScript.src).href;
 
@@ -40,6 +42,17 @@
 
     function init() {
         resize();
+        try {
+            const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY));
+            if (saved && saved.length === COUNT) {
+                particles = saved;
+                for (const p of particles) {
+                    p.x = Math.min(Math.max(p.x, p.size / 2), canvas.width - p.size / 2);
+                    p.y = Math.min(Math.max(p.y, p.size / 2), canvas.height - p.size / 2);
+                }
+                return;
+            }
+        } catch (_) {}
         particles = [];
         for (let i = 0; i < COUNT; i++) particles.push(createParticle(particles));
     }
@@ -95,4 +108,7 @@
     img.onload = () => { init(); draw(); };
     img.onerror = () => console.warn('teeth-bg: icon not found');
     window.addEventListener('resize', resize);
+    window.addEventListener('pagehide', () => {
+        try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(particles)); } catch (_) {}
+    });
 })();
