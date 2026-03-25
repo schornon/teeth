@@ -59,6 +59,12 @@
                 }
             }
         }
+        // clamp speed so repulsion forces don't accumulate indefinitely
+        const MAX_SPEED = 0.12;
+        for (const p of particles) {
+            if (p.vy > MAX_SPEED) p.vy = MAX_SPEED;
+            if (p.vy < -MAX_SPEED) p.vy = -MAX_SPEED;
+        }
     }
 
     function draw() {
