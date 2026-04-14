@@ -99,8 +99,8 @@ header h2 {
     width: 60%;
 }
 .content-section {
-    width: min(900px, calc(100% - 40px));
-    margin: 30px auto 10px;
+    width: 80%;
+    margin: 60px auto 10px;
 }
 .section-intro {
     font-size: 20px;
