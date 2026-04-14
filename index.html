@@ -201,5 +201,18 @@
     </footer>
 
 <script src="assets/teeth-bg.js"></script>
+<script>
+    document.querySelectorAll('.screenshot-carousel').forEach((carousel) => {
+        let scrollIndicatorTimeout;
+
+        carousel.addEventListener('scroll', () => {
+            carousel.classList.add('is-scrolling');
+            window.clearTimeout(scrollIndicatorTimeout);
+            scrollIndicatorTimeout = window.setTimeout(() => {
+                carousel.classList.remove('is-scrolling');
+            }, 700);
+        }, { passive: true });
+    });
+</script>
 </body>
 </html>
