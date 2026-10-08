@@ -10,8 +10,7 @@ Once deployed, the site will be available at: **https://teeth.csbrewed.com**
 
 ```
 teeth/
-├── index.html          # Main landing page
-├── faq.html            # Frequently Asked Questions
+├── index.html          # Main landing page (includes FAQ section)
 ├── support.html        # Support/Contact page
 ├── styles.css          # Dark theme stylesheet
 ├── .nojekyll           # GitHub Pages configuration
@@ -26,12 +25,9 @@ teeth/
 ### Home (index.html)
 - Hero section with app icon and tagline
 - Three feature sections with screenshots
+- Complete FAQ section (10 questions)
 - Call-to-action with App Store link
 - Responsive navigation and footer
-
-### FAQ (faq.html)
-- 10 frequently asked questions about the app
-- Topics: features, pricing, privacy, compatibility
 
 ### Support (support.html)
 - Contact form (Google Form embedded)
